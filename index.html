@@ -1,41 +1,44 @@
 <!doctype html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cleidson Delivery | Agilidade e Segurança</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cleidson Delivery | Agilidade e Segurança</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet" />
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="src/css/style.css" />
-</head>
-<body>
+    <link rel="stylesheet" href="src/css/style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header class="header">
+      <nav class="navbar container">
+        <a href="#" class="logo"> Cleidson <span>Delivery</span> </a>
 
-  <!-- NAVBAR -->
-  <header class="header">
-    <nav class="navbar container">
-      <a href="#" class="logo">
-        Cleidson <span>Delivery</span>
-      </a>
+        <div class="nav-menu" id="nav-menu">
+          <ul class="nav-links">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#parceiros">Parceiros</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
 
-      <div class="nav-menu" id="nav-menu">
-        <ul class="nav-links">
-          <li><a href="#inicio">Início</a></li>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#parceiros">Parceiros</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </div>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Abrir Menu">
+          <i class="bx bx-menu"></i>
+        </button>
+      </nav>
+    </header>
 
-      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir Menu">
-        <i class="bx bx-menu"></i>
-      </button>
-    </nav>
-  </header>
-
-  <!-- HERO -->
-  <!-- <main>
+    <!-- HERO -->
+    <!-- <main>
     <section id="inicio" class="hero">
       <div class="container hero-grid">
 
@@ -65,129 +68,163 @@
     </section>
   </main> -->
 
-  <section id="inicio" class="hero">
-  <div class="container hero-grid">
+    <section id="inicio" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>
+            Sua entrega no destino, com a <br /><span>agilidade</span>
+            que você precisa.
+          </h1>
 
-    <div class="hero-text">
-      <h1>
-        Sua entrega no destino,
-        com a <br><span>agilidade</span>
-        que você precisa.
-      </h1>
+          <p>
+            Logística inteligente e segura em Natal e região. Coletamos e
+            entregamos com rapidez máxima.
+          </p>
 
-      <p>
-        Logística inteligente e segura em Natal e região.
-        Coletamos e entregamos com rapidez máxima.
-      </p>
+          <div class="hero-btns">
+            <a href="#" class="btn-primary">
+              <i class="bx bxl-whatsapp"></i>
+              Solicitar Entrega
+            </a>
 
-      <div class="hero-btns">
-        <a href="#" class="btn-primary">
-          <i class='bx bxl-whatsapp'></i>
-          Solicitar Entrega
-        </a>
+            <a href="#" class="btn-secondary"> Saber Mais </a>
+          </div>
 
-        <a href="#" class="btn-secondary">
-          Saber Mais
-        </a>
-      </div>
-
-      <div class="hero-benefits">
-        <span>✔ Atendimento rápido</span>
-        <span>✔ Entrega em toda Natal e região</span>
-        <span>✔ +500 entregas realizadas</span>
-      </div>
-    </div>
-
-    <div class="hero-img">
-      <img src="src/img/img_section_home.png" alt="Motoboy realizando entrega">
-    </div>
-
-  </div>
-</section>
-
-
-<!-- Section About -->
- <section class="about section container" id="sobre">
-    <div class="about__container">
-        <div class="about__data">
-            <h2 class="section__title">
-                Mais que uma entrega, <br> 
-                <span>um compromisso com você.</span>
-            </h2>
-            
-            <p class="about__description">
-                Nascemos da necessidade de conectar Natal e região com agilidade real. No <b>Cleidson Delivery</b>, não transportamos apenas encomendas; entregamos tranquilidade para o seu negócio e tempo para a sua rotina. Nosso motor é a confiança e nossa rota é a eficiência.
-            </p>
-
-            <div class="about__values">
-                <div class="value__card">
-                    <i class='bx bx-shield-quarter'></i>
-                    <h3>Segurança</h3>
-                    <p>Sua encomenda tratada com o máximo cuidado.</p>
-                </div>
-
-                <div class="value__card">
-                    <i class='bx bx-timer'></i>
-                    <h3>Agilidade</h3>
-                    <p>Rotas inteligentes para entregas recordes.</p>
-                </div>
-
-                <div class="value__card">
-                    <i class='bx bx-medal'></i>
-                    <h3>Compromisso</h3>
-                    <p>Valores transparentes e foco total no cliente.</p>
-                </div>
-            </div>
-
-            <p class="about__highlight">
-                <b>Por que nos escolher?</b> Unimos a expertise técnica em monitoramento com a agilidade das ruas de Natal, garantindo que cada quilômetro percorrido seja sinônimo de satisfação.
-            </p>
+          <div class="hero-benefits">
+            <span>✔ Atendimento rápido</span>
+            <span>✔ Entrega em toda Natal e região</span>
+            <span>✔ +500 entregas realizadas</span>
+          </div>
         </div>
-    </div>
-</section>
 
-<!-- Section Services -->
- <section class="services section container" id="servicos">
-    <h2 class="section__title">
-        Soluções em Logística <br> <span>Para o que você precisar</span>
-    </h2>
+        <div class="hero-img">
+          <img
+            src="src/img/img_section_home.png"
+            alt="Motoboy realizando entrega"
+          />
+        </div>
+      </div>
+    </section>
 
-    <div class="services__container grid">
-        <article class="services__card">
-            <div class="services__icon">
-                <i class='bx bx-package'></i>
+    <!-- Section About -->
+    <section class="about section container" id="sobre">
+      <div class="about__container">
+        <div class="about__data">
+          <h2 class="section__title">
+            Mais que uma entrega, <br />
+            <span>um compromisso com você.</span>
+          </h2>
+
+          <p class="about__description">
+            Nascemos da necessidade de conectar Natal e região com agilidade
+            real. No <b>Cleidson Delivery</b>, não transportamos apenas
+            encomendas; entregamos tranquilidade para o seu negócio e tempo para
+            a sua rotina. Nosso motor é a confiança e nossa rota é a eficiência.
+          </p>
+
+          <div class="about__values">
+            <div class="value__card">
+              <i class="bx bx-shield-quarter"></i>
+              <h3>Segurança</h3>
+              <p>Sua encomenda tratada com o máximo cuidado.</p>
             </div>
-            <h3 class="services__title">Entregas E-commerce</h3>
-            <p class="services__description">
-                Coleta e entrega rápida para lojas online. Garantimos que seu cliente receba o produto com agilidade e cuidado.
-            </p>
-            <span class="services__status">Disponibilidade Imediata</span>
+
+            <div class="value__card">
+              <i class="bx bx-timer"></i>
+              <h3>Agilidade</h3>
+              <p>Rotas inteligentes para entregas recordes.</p>
+            </div>
+
+            <div class="value__card">
+              <i class="bx bx-medal"></i>
+              <h3>Compromisso</h3>
+              <p>Valores transparentes e foco total no cliente.</p>
+            </div>
+          </div>
+
+          <p class="about__highlight">
+            <b>Por que nos escolher?</b> Unimos a expertise técnica em
+            monitoramento com a agilidade das ruas de Natal, garantindo que cada
+            quilômetro percorrido seja sinônimo de satisfação.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Services -->
+    <section class="services section container" id="servicos">
+      <h2 class="section__title">
+        Soluções em Logística <br />
+        <span>Para o que você precisar</span>
+      </h2>
+
+      <div class="services__container grid">
+        <article class="services__card">
+          <div class="services__icon">
+            <i class="bx bx-package"></i>
+          </div>
+          <h3 class="services__title">Entregas E-commerce</h3>
+          <p class="services__description">
+            Coleta e entrega rápida para lojas online. Garantimos que seu
+            cliente receba o produto com agilidade e cuidado.
+          </p>
+          <span class="services__status">Disponibilidade Imediata</span>
         </article>
 
         <article class="services__card">
-            <div class="services__icon">
-                <i class='bx bx-file-blank'></i>
-            </div>
-            <h3 class="services__title">Documentos e Contratos</h3>
-            <p class="services__description">
-                Serviço prioritário para escritórios e cartórios. Coleta de assinaturas e entrega de documentos com total sigilo.
-            </p>
-            <span class="services__status">Segurança Máxima</span>
+          <div class="services__icon">
+            <i class="bx bx-file-blank"></i>
+          </div>
+          <h3 class="services__title">Documentos e Contratos</h3>
+          <p class="services__description">
+            Serviço prioritário para escritórios e cartórios. Coleta de
+            assinaturas e entrega de documentos com total sigilo.
+          </p>
+          <span class="services__status">Segurança Máxima</span>
         </article>
 
         <article class="services__card">
-            <div class="services__icon">
-                <i class='bx bx-cycling'></i>
-            </div>
-            <h3 class="services__title">Serviços Expressos</h3>
-            <p class="services__description">
-                Aquelas emergências do dia a dia? Chaves esquecidas ou presentes de última hora? Nós resolvemos.
-            </p>
-            <span class="services__status">Atendimento 24h</span>
+          <div class="services__icon">
+            <i class="bx bx-cycling"></i>
+          </div>
+          <h3 class="services__title">Serviços Expressos</h3>
+          <p class="services__description">
+            Aquelas emergências do dia a dia? Chaves esquecidas ou presentes de
+            última hora? Nós resolvemos.
+          </p>
+          <span class="services__status">Atendimento 24h</span>
         </article>
-    </div>
-</section>
+      </div>
+    </section>
 
-  <script src="src/js/script.js"></script>
-</body>
+    <!-- Serction Parceiros -->
+    <section class="partners section">
+      <div class="container">
+        <h2 class="section__title center">
+          Empresas que confiam <br />
+          <span>na nossa agilidade</span>
+        </h2>
+
+        <div class="partners__container">
+          <div class="partners__track">
+            <div class="partner__logo"><span>TechStore</span></div>
+            <div class="partner__logo"><span>FarmaVida</span></div>
+            <div class="partner__logo"><span>GourmetBox</span></div>
+            <div class="partner__logo"><span>ExpressLog</span></div>
+            <div class="partner__logo"><span>SuperTop</span></div>
+            <div class="partner__logo"><span>ModaRapid</span></div>
+
+            <div class="partner__logo"><span>TechStore</span></div>
+            <div class="partner__logo"><span>FarmaVida</span></div>
+            <div class="partner__logo"><span>GourmetBox</span></div>
+            <div class="partner__logo"><span>ExpressLog</span></div>
+            <div class="partner__logo"><span>SuperTop</span></div>
+            <div class="partner__logo"><span>ModaRapid</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="src/js/script.js"></script>
+  </body>
 </html>

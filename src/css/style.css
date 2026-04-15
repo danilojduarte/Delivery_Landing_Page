@@ -402,6 +402,89 @@ img {
     letter-spacing: 1px;
 }
 
+/*=============== PARCEIROS ===============*/
+.partners {
+    /* 1. Cor clara de fundo para destacar das outras seções */
+    /* Usei um cinza muito escuro/azulado para manter o tom premium sem ser preto total */
+    background-color: #161718; 
+    padding: 3rem 0;
+    overflow: hidden;
+    border-top: 1px solid rgba(255, 255, 255, 0.03);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+    margin-top: 3rem;
+}
+
+.partners__container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.partners__track {
+    display: flex;
+    /* Cálculo: largura do item * quantidade total de itens (incluindo os repetidos) */
+    width: calc(250px * 12); 
+    animation: scroll 30s linear infinite;
+}
+
+.partner__logo {
+    width: 250px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease; /* Transição suave para o hover */
+    cursor: pointer;
+    opacity: 0.5; /* Começa um pouco mais apagado */
+}
+
+/* 2. Efeito Hover nos Parceiros */
+.partner__logo:hover {
+    opacity: 1;
+    transform: scale(1.1); /* Aumenta levemente o tamanho */
+}
+
+.partner__logo span {
+    font-size: 1.6rem;
+    font-weight: var(--font-bold);
+    color: var(--text-color-light);
+    transition: color 0.4s;
+}
+
+/* Quando passa o mouse, o texto fica dourado */
+.partner__logo:hover span {
+    color: var(--first-color);
+    text-shadow: 0 0 15px var(--first-color-light); /* Brilho dourado suave */
+}
+
+/* Caso use imagens futuramente */
+.partner__logo img {
+    max-width: 150px;
+    filter: grayscale(100%);
+    transition: 0.4s;
+}
+
+.partner__logo:hover img {
+    filter: grayscale(0%);
+}
+
+/* Ajuste na animação para ser perfeitamente infinita */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        /* Move exatamente metade do conteúdo para o loop ser invisível */
+        transform: translateX(calc(-250px * 6)); 
+    }
+}
+
+/* Pausar ao interagir */
+.partners__container:hover .partners__track {
+    animation-play-state: paused;
+}
+
 
 
 
