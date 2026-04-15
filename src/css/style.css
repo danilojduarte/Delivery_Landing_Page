@@ -309,6 +309,99 @@ img {
     border-radius: 1rem;
 }
 
+/*=============== SERVIÇOS ===============*/
+.services .section__title {
+    text-align: center;
+    margin-bottom: 3rem; /* Espaço entre o título e os cards */
+}
+
+/* 2. Melhorando o espaçamento entre os Cards */
+.services__container {
+    display: grid;
+    /* auto-fit garante que eles se ajustem, gap cria o respiro entre eles */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 2.5rem; /* Aumentei o espaço para os cards não "sufocarem" */
+    padding-top: 1rem;
+}
+
+/* 3. Ajuste fino no Card (Opcional) */
+.services__card {
+    background-color: var(--container-color);
+    padding: 3rem 2rem;
+    border-radius: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    text-align: center;
+    transition: all 0.4s ease;
+    /* Garante que o card mantenha uma altura mínima harmoniosa */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Efeito de brilho no fundo ao passar o mouse */
+.services__card::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at top right, var(--first-color-light), transparent);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.services__card:hover {
+    transform: translateY(-10px);
+    border-color: var(--first-color);
+}
+
+.services__card:hover::before {
+    opacity: 1;
+}
+
+.services__icon {
+    width: 70px;
+    height: 70px;
+    background-color: var(--body-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 2.5rem;
+    color: var(--first-color);
+    border: 1px solid var(--first-color-light);
+    transition: 0.4s;
+}
+
+.services__card:hover .services__icon {
+    background-color: var(--first-color);
+    color: var(--body-color);
+    transform: rotateY(360deg);
+}
+
+.services__title {
+    font-size: var(--h2-font-size);
+    color: var(--title-color);
+    margin-bottom: 1rem;
+}
+
+.services__description {
+    font-size: var(--small-font-size);
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.services__status {
+    font-size: var(--smaller-font-size);
+    color: var(--first-color);
+    font-weight: var(--font-medium);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
 
 
 
@@ -375,6 +468,8 @@ img {
         align-items: center;
         text-align: center;
     }
+
+    /* Responsividdde section About */
     .about__values {
         grid-template-columns: 1fr; /* Um card por linha no celular */
         gap: 1.5rem;
@@ -390,6 +485,17 @@ img {
     
     .value__card {
         padding: 1.5rem;
+    }
+    /* Responsividdde section Services */
+    .services__container {
+        /* No mobile, um espaço de 2rem é ideal para não dispersar muito */
+        gap: 2rem; 
+        padding: 1rem;
+    }
+    
+    .services .section__title {
+        font-size: var(--h1-font-size);
+        margin-bottom: 2rem;
     }
 }
 
