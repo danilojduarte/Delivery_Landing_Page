@@ -485,6 +485,83 @@ img {
     animation-play-state: paused;
 }
 
+/*=============== CONVERSÃO FINAL ===============*/
+.conversion {
+    /* 1. Cor "clara" que não quebra o contraste: Cinza muito escuro/azulado */
+    background-color: #1a1c1d; 
+    padding: 6rem 0;
+    overflow: hidden;
+}
+
+.conversion__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+.conversion__data {
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.conversion .section__title.center {
+    font-size: var(--bigger-font-size);
+    margin-bottom: 2rem;
+    color: var(--title-color);
+}
+
+.conversion__description {
+    font-size: var(--normal-font-size);
+    color: var(--text-color);
+    margin-bottom: 3rem;
+    line-height: 1.8;
+}
+
+.conversion__button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+/* Botão Especial de WhatsApp */
+.button--whatsapp {
+    background-color: var(--first-color); /* Dourado */
+    color: var(--body-color); /* Fundo */
+    font-weight: var(--font-semi-bold);
+    display: flex;
+    border-radius: 0.5rem;
+    align-items: center;
+    gap: 0.75rem;
+    transition: 0.4s;
+    box-shadow: 0 10px 24px var(--first-color-light); /* Brilho Dourado */
+}
+
+.button--whatsapp:hover {
+    transform: translateY(-5px);
+    background-color: var(--first-color-alt); /* Dourado escuro */
+    box-shadow: 0 15px 32px var(--first-color-light);
+}
+
+.button--whatsapp i {
+    font-size: 1.8rem;
+}
+
+.conversion__img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.conversion__img img {
+    max-width: 200px;
+    padding: 1rem
+    width: 90%;
+    border-radius: 1.5rem;
+    box-shadow: 0 20px 48px var(--first-color-light); /* Brilho dourado na imagem */
+}
+
 
 
 
@@ -579,6 +656,21 @@ img {
     .services .section__title {
         font-size: var(--h1-font-size);
         margin-bottom: 2rem;
+    }
+
+    /* Responsividdde section Services */
+    .conversion__container {
+        flex-direction: column; /* No celular, o texto fica sobre a imagem */
+        text-align: center;
+        gap: 3rem;
+    }
+
+    .conversion__data {
+        padding: 0 1rem;
+    }
+
+    .conversion__img {
+        width: 100%;
     }
 }
 
