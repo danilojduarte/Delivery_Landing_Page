@@ -1,22 +1,16 @@
 <!doctype html>
-<html lang="pt-br">
+<html lang="pt-br" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cleidson Delivery | Agilidade e Segurança</title>
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet"/>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="src/css/style.css" />
   </head>
   <body>
+
     <!-- NAVBAR -->
     <header class="header">
       <nav class="navbar container">
@@ -31,48 +25,25 @@
           </ul>
         </div>
 
-        <button class="nav-toggle" id="nav-toggle" aria-label="Abrir Menu">
-          <i class="bx bx-menu"></i>
-        </button>
+        <div class="nav-actions">
+          <!-- BOTÃO TEMA -->
+          <button class="theme-toggle" id="theme-toggle" aria-label="Alternar tema">
+            <i class="bx bx-sun" id="theme-icon"></i>
+          </button>
+
+          <button class="nav-toggle" id="nav-toggle" aria-label="Abrir Menu">
+            <i class="bx bx-menu"></i>
+          </button>
+        </div>
       </nav>
     </header>
 
     <!-- HERO -->
-    <!-- <main>
     <section id="inicio" class="hero">
       <div class="container hero-grid">
-
-        <div class="hero-text">
+        <div class="hero-text reveal reveal-left">
           <h1>
-            Sua entrega no destino,
-            com a <span>agilidade</span>
-            que você precisa.
-          </h1>
-
-          <p>
-            Logística inteligente e segura em Natal e região.
-            Coletamos e entregamos com rapidez máxima.
-          </p>
-
-          <div class="hero-btns">
-            <a href="#" class="btn-primary">Solicitar Entrega</a>
-            <a href="#" class="btn-secondary">Saber Mais</a>
-          </div>
-        </div>
-
-        <div class="hero-img">
-          <img src="src/img/img_section_home.png" alt="Cleidson Delivery">
-        </div>
-
-      </div>
-    </section>
-  </main> -->
-
-    <section id="inicio" class="hero">
-      <div class="container hero-grid">
-        <div class="hero-text">
-          <h1>
-            Sua entrega no destino, com a <br /><span>agilidade</span>
+            Sua entrega no destino, com a <span>agilidade</span>
             que você precisa.
           </h1>
 
@@ -86,7 +57,6 @@
               <i class="bx bxl-whatsapp"></i>
               Solicitar Entrega
             </a>
-
             <a href="#" class="btn-secondary"> Saber Mais </a>
           </div>
 
@@ -97,11 +67,8 @@
           </div>
         </div>
 
-        <div class="hero-img">
-          <img
-            src="src/img/img_section_home.png"
-            alt="Motoboy realizando entrega"
-          />
+        <div class="hero-img reveal reveal-right">
+          <img src="src/img/img_section_home.png" alt="Motoboy realizando entrega" />
         </div>
       </div>
     </section>
@@ -110,12 +77,12 @@
     <section class="about section container" id="sobre">
       <div class="about__container">
         <div class="about__data">
-          <h2 class="section__title">
+          <h2 class="section__title reveal reveal-up">
             Mais que uma entrega, <br />
             <span>um compromisso com você.</span>
           </h2>
 
-          <p class="about__description">
+          <p class="about__description reveal reveal-up">
             Nascemos da necessidade de conectar Natal e região com agilidade
             real. No <b>Cleidson Delivery</b>, não transportamos apenas
             encomendas; entregamos tranquilidade para o seu negócio e tempo para
@@ -123,26 +90,24 @@
           </p>
 
           <div class="about__values">
-            <div class="value__card">
+            <div class="value__card reveal reveal-up" style="--delay: 0s">
               <i class="bx bx-shield-quarter"></i>
               <h3>Segurança</h3>
               <p>Sua encomenda tratada com o máximo cuidado.</p>
             </div>
-
-            <div class="value__card">
+            <div class="value__card reveal reveal-up" style="--delay: .15s">
               <i class="bx bx-timer"></i>
               <h3>Agilidade</h3>
               <p>Rotas inteligentes para entregas recordes.</p>
             </div>
-
-            <div class="value__card">
+            <div class="value__card reveal reveal-up" style="--delay: .3s">
               <i class="bx bx-medal"></i>
               <h3>Compromisso</h3>
               <p>Valores transparentes e foco total no cliente.</p>
             </div>
           </div>
 
-          <p class="about__highlight">
+          <p class="about__highlight reveal reveal-up">
             <b>Por que nos escolher?</b> Unimos a expertise técnica em
             monitoramento com a agilidade das ruas de Natal, garantindo que cada
             quilômetro percorrido seja sinônimo de satisfação.
@@ -153,13 +118,13 @@
 
     <!-- Section Services -->
     <section class="services section container" id="servicos">
-      <h2 class="section__title">
+      <h2 class="section__title reveal reveal-up">
         Soluções em Logística <br />
         <span>Para o que você precisar</span>
       </h2>
 
       <div class="services__container grid">
-        <article class="services__card">
+        <article class="services__card reveal reveal-up" style="--delay: 0s">
           <div class="services__icon">
             <i class="bx bx-package"></i>
           </div>
@@ -171,7 +136,7 @@
           <span class="services__status">Disponibilidade Imediata</span>
         </article>
 
-        <article class="services__card">
+        <article class="services__card reveal reveal-up" style="--delay: .15s">
           <div class="services__icon">
             <i class="bx bx-file-blank"></i>
           </div>
@@ -183,7 +148,7 @@
           <span class="services__status">Segurança Máxima</span>
         </article>
 
-        <article class="services__card">
+        <article class="services__card reveal reveal-up" style="--delay: .3s">
           <div class="services__icon">
             <i class="bx bx-cycling"></i>
           </div>
@@ -197,10 +162,10 @@
       </div>
     </section>
 
-    <!-- Serction Parceiros -->
-    <section class="partners section">
+    <!-- Section Parceiros -->
+    <section class="partners section" id="parceiros">
       <div class="container">
-        <h2 class="section__title center">
+        <h2 class="section__title center reveal reveal-up">
           Empresas que confiam <br />
           <span>na nossa agilidade</span>
         </h2>
@@ -213,7 +178,7 @@
             <div class="partner__logo"><span>ExpressLog</span></div>
             <div class="partner__logo"><span>SuperTop</span></div>
             <div class="partner__logo"><span>ModaRapid</span></div>
-
+            <!-- duplicados para loop infinito -->
             <div class="partner__logo"><span>TechStore</span></div>
             <div class="partner__logo"><span>FarmaVida</span></div>
             <div class="partner__logo"><span>GourmetBox</span></div>
@@ -225,32 +190,32 @@
       </div>
     </section>
 
-    <!-- Section Clients -->
-    <section class="conversion section container">
-    <div class="conversion__container">
-        <div class="conversion__data">
-            <h2 class="section__title center">
-                Recupere o controle do seu tempo. <br> 
-                <span>Sua satisfação, nossa missão.</span>
-            </h2>
-            
-            <p class="conversion__description">
-                Não é apenas sobre pacotes e encomendas. É sobre a tranquilidade de saber que sua logística está em mãos seguras. No <b>Cleidson Delivery</b>, cada entrega recorde é uma promessa de agilidade cumprida, permitindo que você foque no que realmente importa. Sinta a diferença de um serviço que respeita o seu tempo.
-            </p>
+    <!-- Section Conversão -->
+    <section class="conversion section container" id="contato">
+      <div class="conversion__container">
+        <div class="conversion__data reveal reveal-left">
+          <h2 class="section__title center">
+            Recupere o controle do seu tempo. <br>
+            <span>Sua satisfação, nossa missão.</span>
+          </h2>
 
-            <div class="conversion__button-wrapper">
-                <a href="https://wa.me/5584986108136" target="_blank" class="button button--whatsapp">
-                    <i class='bx bxl-whatsapp'></i>
-                    Solicitar Entrega Imediata
-                </a>
-            </div>
+          <p class="conversion__description">
+            Não é apenas sobre pacotes e encomendas. É sobre a tranquilidade de saber que sua logística está em mãos seguras. No <b>Cleidson Delivery</b>, cada entrega recorde é uma promessa de agilidade cumprida, permitindo que você foque no que realmente importa.
+          </p>
+
+          <div class="conversion__button-wrapper">
+            <a href="https://wa.me/5584986108136" target="_blank" class="button button--whatsapp">
+              <i class='bx bxl-whatsapp'></i>
+              Solicitar Agora
+            </a>
+          </div>
         </div>
 
-        <div class="conversion__img">
-            <img src="src/img/img_section_clients.png" alt="Proposta comercial e dinâmica para a Hero Section do Cleidson Delivery" style="border-radius: 12px; max-width: 100%; border: 2px solid #333;">
+        <div class="conversion__img reveal reveal-right">
+          <img src="src/img/img_section_clients.png" alt="Entregador Cleidson Delivery" style="border-radius: 12px; max-width: 100%; border: 2px solid #333;">
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
     <script src="src/js/script.js"></script>
   </body>
