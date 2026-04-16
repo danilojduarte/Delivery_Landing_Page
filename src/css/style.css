@@ -407,7 +407,7 @@ img {
     /* 1. Cor clara de fundo para destacar das outras seções */
     /* Usei um cinza muito escuro/azulado para manter o tom premium sem ser preto total */
     background-color: #161718; 
-    padding: 3rem 0;
+    padding: 2rem 0;
     overflow: hidden;
     border-top: 1px solid rgba(255, 255, 255, 0.03);
     border-bottom: 1px solid rgba(255, 255, 255, 0.03);
@@ -418,7 +418,7 @@ img {
     width: 100%;
     display: flex;
     align-items: center;
-    padding: 2rem 0;
+    padding: 0.5rem 0;
 }
 
 .partners__track {
