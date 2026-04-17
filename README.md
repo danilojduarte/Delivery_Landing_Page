@@ -43,8 +43,5 @@ Landing Page desenvolvida para a **Cleidson Delivery**, uma empresa de logístic
 
 ---
 
-## 👤 Autor
+## 👤 Autor 🖖🏽
 Desenvolvido por **Danilo** – www.linkedin.com/in/danilo-duarte-0b38a61a9
-
-<img width="1262" height="3644" alt="Projeto002" src="https://github.com/user-attachments/assets/c2fbccae-9c28-4f80-ba6a-482d261e4834" />
-<img width="1248" height="3628" alt="Projeto001" src="https://github.com/user-attachments/assets/d48c60b9-c105-40bc-a2ff-3f4add428746" />
