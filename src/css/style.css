@@ -771,6 +771,7 @@ img {
 .footer {
   padding-top: 5rem;
   padding-bottom: 2rem;
+  margin-top:2rem;
   background-color: var(--body-color);
   border-top: 1px solid rgba(255, 255, 255, 0.05);
   transition: background-color 0.4s;
@@ -1064,6 +1065,9 @@ img {
 
 /* SMALL MOBILE */
 @media (max-width: 480px) {
+  .hero {
+    margin-top: 2rem;
+  }
   .hero-btns {
     flex-direction: column;
   }
