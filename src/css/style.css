@@ -254,6 +254,8 @@ img {
   color: var(--title-color);
   font-weight: 800;
   margin-bottom: 1.5rem;
+
+  text-transform: capitalize;
 }
 
 .hero-text h1 span {
@@ -363,6 +365,7 @@ img {
   margin-bottom: 1.5rem;
   font-weight: var(--font-bold);
   line-height: 1.2;
+  text-transform: capitalize;
 }
 
 .section__title span {
@@ -519,6 +522,7 @@ img {
   margin-bottom: 1rem;
   position: relative;
   z-index: 1;
+  text-transform: capitalize;
 }
 
 .services__description {
@@ -557,6 +561,7 @@ img {
 
 .partners .section__title {
   margin-bottom: 2rem;
+  text-transform: capitalize;
 }
 
 .partners__container {
