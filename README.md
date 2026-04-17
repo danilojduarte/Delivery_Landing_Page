@@ -1,6 +1,8 @@
 # 🛵 Cleidson Delivery - Landing Page Premium
 
-![Banner do Projeto](.src/img/BannerProjeto)
+<div align="center">
+  <img src="src/img/BannerProjeto/Projeto001.jpg" width="100%" alt="Banner do Projeto" />
+</div>
 
 ## 📋 Sobre o Projeto
 Landing Page desenvolvida para a **Cleidson Delivery**, uma empresa de logística e entregas rápidas baseada em Natal/RN. O objetivo principal foi criar uma presença digital robusta, transmitindo agilidade, segurança e profissionalismo através de uma interface moderna e de alto desempenho.
@@ -27,8 +29,8 @@ Landing Page desenvolvida para a **Cleidson Delivery**, uma empresa de logístic
 
 ## 🖼️ Preview do Projeto
 <div align="center">
-  <img src="./Projeto001.jpg" width="45%" alt="Preview Desktop" />
-  <img src="./Projeto002.jpg" width="45%" alt="Preview Mobile/Responsivo" />
+  <img src="src/img/BannerProjeto/Projeto001.jpg" width="48%" alt="Preview Desktop" />
+  <img src="src/img/BannerProjeto/Projeto002.jpg" width="48%" alt="Preview Mobile" />
 </div>
 
 ---
