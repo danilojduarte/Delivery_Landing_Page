@@ -1,6 +1,8 @@
-# 🛵 Cleidson Delivery - Landing Page Premium
+# 🛵 Cleidson Delivery - Landing Page
 
-![Banner do Projeto](./Projeto001.jpg)
+<div align="center">
+  <img src="src/img/BannerProjeto/Projeto001.jpg" width="100%" alt="Banner do Projeto" />
+</div>
 
 ## 📋 Sobre o Projeto
 Landing Page desenvolvida para a **Cleidson Delivery**, uma empresa de logística e entregas rápidas baseada em Natal/RN. O objetivo principal foi criar uma presença digital robusta, transmitindo agilidade, segurança e profissionalismo através de uma interface moderna e de alto desempenho.
@@ -27,8 +29,8 @@ Landing Page desenvolvida para a **Cleidson Delivery**, uma empresa de logístic
 
 ## 🖼️ Preview do Projeto
 <div align="center">
-  <img src="./Projeto001.jpg" width="45%" alt="Preview Desktop" />
-  <img src="./Projeto002.jpg" width="45%" alt="Preview Mobile/Responsivo" />
+  <img src="src/img/BannerProjeto/Projeto001.jpg" width="48%" alt="Preview Desktop" />
+  <img src="src/img/BannerProjeto/Projeto002.jpg" width="48%" alt="Preview Mobile" />
 </div>
 
 ---
@@ -41,8 +43,5 @@ Landing Page desenvolvida para a **Cleidson Delivery**, uma empresa de logístic
 
 ---
 
-## 👤 Autor
+## 👤 Autor 🖖🏽
 Desenvolvido por **Danilo** – www.linkedin.com/in/danilo-duarte-0b38a61a9
-
-<img width="1262" height="3644" alt="Projeto002" src="https://github.com/user-attachments/assets/c2fbccae-9c28-4f80-ba6a-482d261e4834" />
-<img width="1248" height="3628" alt="Projeto001" src="https://github.com/user-attachments/assets/d48c60b9-c105-40bc-a2ff-3f4add428746" />
