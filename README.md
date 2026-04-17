@@ -1,4 +1,4 @@
-# 🛵 Cleidson Delivery - Landing Page Premium
+# 🛵 Cleidson Delivery - Landing Page
 
 <div align="center">
   <img src="src/img/BannerProjeto/Projeto001.jpg" width="100%" alt="Banner do Projeto" />
