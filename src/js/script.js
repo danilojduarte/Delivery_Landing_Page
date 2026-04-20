@@ -90,3 +90,53 @@ window.addEventListener('scroll', () => {
         header.style.top = '1rem';
     }
 });
+
+
+(function () {
+  const track    = document.getElementById('tcTrack');
+  const dotsWrap = document.getElementById('tcDots');
+  const progress = document.getElementById('tcProgress');
+  if (!track) return;
+
+  const slides   = track.querySelectorAll('.tc-slide');
+  const total    = slides.length;
+  const INTERVAL = 7000;
+  let current = 0, timer;
+
+  slides.forEach((_, i) => {
+    const d = document.createElement('button');
+    d.className = 'tc-dot' + (i === 0 ? ' active' : '');
+    d.setAttribute('aria-label', `Depoimento ${i + 1}`);
+    d.addEventListener('click', () => { goTo(i); startAuto(); });
+    dotsWrap.appendChild(d);
+  });
+
+  const dots = dotsWrap.querySelectorAll('.tc-dot');
+
+  function goTo(idx) {
+    current = (idx + total) % total;
+    track.style.transform = `translateX(-${current * 100}%)`;
+    dots.forEach((d, i) => d.classList.toggle('active', i === current));
+    resetProgress();
+  }
+
+  function resetProgress() {
+    progress.style.transition = 'none';
+    progress.style.width = '0%';
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      progress.style.transition = `width ${INTERVAL}ms linear`;
+      progress.style.width = '100%';
+    }));
+  }
+
+  function startAuto() {
+    clearInterval(timer);
+    timer = setInterval(() => goTo(current + 1), INTERVAL);
+  }
+
+  document.getElementById('tcPrev').addEventListener('click', () => { goTo(current - 1); startAuto(); });
+  document.getElementById('tcNext').addEventListener('click', () => { goTo(current + 1); startAuto(); });
+
+  goTo(0);
+  startAuto();
+})();
